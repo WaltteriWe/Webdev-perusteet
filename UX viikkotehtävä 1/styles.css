@@ -1,0 +1,13 @@
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    color: aliceblue;
+    align-items: center;
+  }
+
+  h1 {
+    color:brown;
+    padding-left: 450px;
+    padding-right: auto;
+  }
