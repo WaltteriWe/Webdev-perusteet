@@ -1,13 +1,52 @@
-.box {
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
-    color: aliceblue;
-    align-items: center;
-  }
+* {
+  /*
+  margin: 0;
+  padding: 0;
+  display: flex; 
+*/
+  box-sizing: border-box;
+}
 
-  h1 {
-    color:brown;
-    padding-left: 450px;
-    padding-right: auto;
-  }
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  color: aliceblue;
+}
+
+h1 {
+  margin-right: 50%;
+  margin-left: 25%;
+}
+
+#nav-bar {
+  color: blueviolet;
+  margin-right: 40%;
+  margin-left: 25%;
+  display: inline;
+}
+
+.top-box {
+  color: rgb(0, 174, 255);
+  border: 5px solid black;
+  margin: 20px auto 20px auto;
+}
+
+ul {
+  margin: auto;
+  /* float: right; */
+}
+
+li {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navigation {
+  margin-top: auto;
+  float: right;
+  clear: left;
+  display: inline;
+  color: blue;
+}

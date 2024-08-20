@@ -41,13 +41,28 @@
       }
 
       body {
+        margin: 0;
+      }
+
+      main {
+        position: relative;
+        background-color: bisque;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10%;
+        width: 60%;
+        max-width: 700px;
+        min-width: 300px;
       }
 
       .box {
         height: 100px;
-        width: 100px;
+        width: 20%;
         border: 1px solid black;
         color: aliceblue;
+        padding: 10px;
+        display: block;
+        float: left;
       }
 
       #red {
@@ -71,6 +86,17 @@
         clear: both;
       }
 
+      #lause {
+        background-color: black;
+        color: blueviolet;
+      }
+
+      nav::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
       /* img */
       img {
       }
@@ -90,32 +116,80 @@
       p {
         color: blueviolet;
       }
+
+      .burger {
+        width: 70%;
+        height: 70%;
+        float: left;
+        margin-right: 10%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        border: 2px solid;
+        border-color: rgba(255, 0, 0, 0);
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgb(0, 0, 0);
+      }
+
+      #mini1 {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        color: rgb(0, 255, 102);
+        position: absolute;
+        right: -30px;
+        top: 50px;
+      }
+
+      #mini2 {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(255, 0, 187);
+        color: rgb(0, 255, 60);
+        position: fixed;
+        left: 0;
+        top: 50%;
+      }
     </style>
   </head>
 
   <body>
-    <div class="box" id="red">Box 1</div>
-    <div class="box" id="green">Box 2</div>
-    <div class="box" id="blue">Box 3</div>
-    <div class="box" id="yellow">Box 4</div>
-    <div class="box" id="orange">Box 5</div>
-
+    <nav>
+      <div class="box" id="red">Box 1</div>
+      <div class="box" id="green">Box 2</div>
+      <div class="box" id="blue">Box 3</div>
+      <div class="box" id="yellow">Box 4</div>
+      <div class="box" id="orange">Box 5</div>
+    </nav>
     <!-- Float continues, clearing -->
 
-    <h1>Heading 1</h1>
-    <h1>Heading 2</h1>
-    <h2>Toisen tason otsikko :D</h2>
-    <h3>Heading 3</h3>
+    <h1 class="clear">besters</h1>
 
-    <p class="info">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate
-      minus praesentium asperiores ratione ipsum corporis error similique
-      dignissimos quas. Libero nobis quasi autem quia quaerat officia ab
-      asperiores quibusdam.
-    </p>
-    <p>monkey</p>
-    <p>brr</p>
+    <main>
+      <div id="mini1">
+        Mini 1
+        <img src="img/burger2.jpg" alt="burger2" style="width: 100%" />
+      </div>
+      <div id="mini2">Mini 2</div>
+      <h1>Heading 1</h1>
+      <h1>Heading 2</h1>
+      <h2>Toisen tason otsikko :D</h2>
+      <h3>Heading 3</h3>
 
+      <p class="info" style="width: 50%">
+        <span id="lause"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit.<img
+            class="burger"
+            src="img/burger.jpg"
+            alt="burger"
+          />
+        </span>
+        praesentium asperiores ratione ipsum corporis error similique
+        dignissimos quas. Libero nobis quasi autem quia quaerat officia ab
+        asperiores quibusdam.
+      </p>
+      <p style="width: 25%">monkey ababababaabbabababababbababab</p>
+      <p style="width: 25%">brrbabababababababababababa</p>
+    </main>
     <!-- Responsive images and centering -->
   </body>
 </html>
