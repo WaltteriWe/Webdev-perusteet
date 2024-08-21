@@ -1,19 +1,14 @@
 * {
-  /*
   margin: 0;
   padding: 0;
-  display: flex; 
-*/
+  box-sizing: border-box;
+  text-align: center;
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
 }
 
 body {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(0, 106, 255),
-    rgb(255, 85, 0)
-  );
+  background-color: #602222fb;
   color: white;
   margin: 0;
   padding: 0;
@@ -45,6 +40,7 @@ h3 {
   display: inline;
   text-align: center;
   width: 100%;
+  padding-bottom: 10px;
 }
 
 .top-box {
@@ -54,6 +50,16 @@ h3 {
   border-radius: 35;
   box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.435);
   text-align: center;
+}
+
+.footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
 }
 
 ul {
@@ -68,14 +74,13 @@ li {
 }
 
 #info {
-  position: absolute;
+  position: relative;
   top: 30%;
   left: 50%;
   width: 50%;
-  height: 50%;
-  color: blue;
+  height: 41%;
+  color: rgba(242, 0, 255, 0.579);
   text-align: center;
-  border-radius: 20%;
   padding: 10px;
   box-sizing: border-box;
   margin-left: -25%;
@@ -83,21 +88,46 @@ li {
 }
 #info p {
   margin: 5px 0;
-  color: blue;
+  color: rgb(255, 0, 123);
   text-align: center;
   clear: both;
   margin-top: 10px;
 }
 
+#Box-title {
+  position: relative
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+#middle-text{
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
 .burger {
   position: relative;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 10px auto; /* Center the image and add bottom margin */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 170px;
+  height: 170px;
+  margin: 0 auto 10px auto; 
   border: 2px solid;
-  float: left;
+  float: right;
+  clear: left;
   border: 2px solid;
   border-color: rgba(255, 0, 0, 0);
   border-radius: 70px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  right: 0px;
+  top: -30px;
+}
+
+.burger::after {
+    content: "";
+    clear: both;
+    display: table;
 }
