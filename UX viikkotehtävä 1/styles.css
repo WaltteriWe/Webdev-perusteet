@@ -18,7 +18,8 @@ body {
   height: 100px;
   width: 100px;
   border: 1px solid black;
-  color: aliceblue;
+  background-color: rgba(255, 255, 255, 0.524);
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.784);
 }
 
 h1 {
