@@ -8,25 +8,58 @@
 }
 
 body {
-  background-color: #602222fb;
+  background-image:url("img/background-burger.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   color: white;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
-.box {
+#middle {
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  height: 25%; 
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 10%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  position: absolute;
+  float: left;
   height: 100px;
   width: 100px;
   border: 1px solid black;
-  background-color: rgba(255, 255, 255, 0.524);
+  background-color: rgba(0, 0, 0, 0.524);
   box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.784);
+  margin-top: 20px;
+}
+
+#info {
+  float: left;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 0, 195);
+  width: 50%;
+  height: 41%;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 h1 {
   width: 100%;
   height: 50px;
   text-align: center;
-  color: white;
+  color: rgb(255, 0, 153);
   text-decoration: underline;
 }
 
@@ -45,6 +78,7 @@ h3 {
 }
 
 .top-box {
+  background-color: #000000;
   position: relative;
   color: rgb(0, 174, 255);
   border: 3px solid black;
@@ -74,32 +108,20 @@ li {
   margin-right: auto;
 }
 
-#info {
-  position: relative;
-  top: 30%;
-  left: 50%;
-  width: 50%;
-  height: 41%;
-  color: rgba(242, 0, 255, 0.579);
-  text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-left: -25%;
-  margin-top: 5px;
-}
-#info p {
-  margin: 5px 0;
-  color: rgb(255, 0, 123);
-  text-align: center;
-  clear: both;
-  margin-top: 10px;
-}
 
-#Box-title {
+
+#Info-title {
   position: relative
   text-align: center;
   color: white;
   margin-bottom: 50px;
+}
+
+#Into-text {
+  top: auto;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
 }
 
 #middle-text{
@@ -109,7 +131,7 @@ li {
 }
 
 .burger {
-  position: relative;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -131,4 +153,22 @@ li {
     content: "";
     clear: both;
     display: table;
+}
+
+#home {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#menu {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#contact {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
 }
